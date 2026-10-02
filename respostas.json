@@ -1,0 +1,11 @@
+{
+  "matricula": "",
+  "casos": {
+    "1": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
+    "2": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
+    "3": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
+    "4": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
+    "5": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
+    "6": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""}
+  }
+}

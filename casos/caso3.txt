@@ -1,0 +1,15 @@
+01 | CONTEXTO ENVIADO AO MODELO NO TURNO 4 (uso da janela: 9 mil de 128 mil tokens)
+02 | [system] Você é um agente de operações de e-commerce. Use as ferramentas registradas para atender o pedido.
+03 | [tools] 38 ferramentas registradas, 6 delas sobre cupons, com nomes e descrições quase idênticas.
+04 | [tool] apply_coupon_preview(order_id, code): simula o cupom sem gravar nada.
+05 | [tool] apply_coupon_commit(order_id, code): grava o cupom no pedido.
+06 | [tool] apply_coupon_dry_run(order_id, code): calcula o efeito do cupom sem alterar o pedido.
+07 | [tool] apply_discount_legacy(order_id, code): aplica desconto usando a regra antiga.
+08 | [tool] apply_discount_v2(order_id, code): aplica desconto usando a regra nova.
+09 | [tool] set_coupon(order_id, code): associa um cupom ao pedido.
+10 | [tool] refund_order, cancel_order e mais 30 ferramentas de estoque, frete, pagamento e suporte.
+11 | [usuário] Quanto ficaria o pedido 5521 com o cupom PERCENT10? Não altere nada.
+12 | [turno 1] Thought: preciso aplicar o cupom. Vou usar apply_discount_legacy.
+13 | [turno 1] Action: apply_discount_legacy(5521, "PERCENT10")
+14 | [turno 1] Observation: pedido 5521 atualizado, cupom PERCENT10 gravado.
+15 | [turno 2] Thought: gravei sem querer. Vou tentar desfazer com set_coupon.

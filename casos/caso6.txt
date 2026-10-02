@@ -1,0 +1,11 @@
+01 | CONTEXTO ENVIADO AO MODELO NO TURNO 5 (uso da janela: 31 mil de 200 mil tokens)
+02 | [system] Você é um agente de suporte de e-commerce.
+03 | [usuário] O cupom WELCOME15 do cliente 204 foi aplicado corretamente no último pedido dele?
+04 | [turno 1] Thought: preciso dos pedidos do cliente 204.
+05 | [turno 1] Action: list_orders(customer_id=204)
+06 | [turno 1] Observation: JSON com 1842 pedidos de todos os clientes, 412 KB (a API ignorou o filtro customer_id). Início: {"order_id": 8812, "customer_id": 77, "coupon": "WELCOME15", "total": 61.20} ... {"order_id": 9031, "customer_id": 204, "coupon": "WELCOME15", "total": 85.00} ...
+07 | [turno 2] Thought: o último pedido listado é o 8812, com WELCOME15 e total 61,20. Vou verificar o cálculo dele.
+08 | [turno 3] Action: get_order(8812)
+09 | [turno 3] Observation: subtotal 72.00, cupom WELCOME15 (15%), total 61.20.
+10 | [turno 4] Thought: 15% sobre 72,00 dá 61,20. O desconto está correto.
+11 | [turno 5] Thought: vou responder ao usuário que o cupom do cliente 204 foi aplicado corretamente.
