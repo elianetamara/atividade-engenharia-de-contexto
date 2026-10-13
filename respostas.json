@@ -1,11 +1,11 @@
 {
-  "matricula": "",
+  "matricula": "122110693",
   "casos": {
-    "1": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
-    "2": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
-    "3": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
-    "4": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
-    "5": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""},
-    "6": {"modo_falha": "", "linha_evidencia": 0, "tecnica": ""}
+    "1": {"modo_falha": "poisoning", "linha_evidencia": 8, "tecnica": "select"},
+    "2": {"modo_falha": "distraction", "linha_evidencia": 14, "tecnica": "compress"},
+    "3": {"modo_falha": "confusion", "linha_evidencia": 3, "tecnica": "select"},
+    "4": {"modo_falha": "clash", "linha_evidencia": 5, "tecnica": "select"},
+    "5": {"modo_falha": "clash", "linha_evidencia": 8, "tecnica": "compress"},
+    "6": {"modo_falha": "confusion", "linha_evidencia": 6, "tecnica": "isolate"}
   }
 }
